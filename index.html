@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="Navbar">
-          
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web - Portfolio</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Mark</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#contact">Get in Touch</a>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div>
+          <div class="left">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is a showcase of my work and skills.</p>
+            <a href="#about">Learn More</a>
+          </div>
+          <div class="right">
+            <img
+              src="https://cerahnews.com/wp-content/uploads/2018/01/16176889_112685309244626_578204711_n-e1516135518784.jpg"
+              alt="Profile Picture"
+            />
+          </div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ee0404"
+            fill-opacity="1"
+            d="M0,96L48,117.3C96,139,192,181,288,213.3C384,245,480,267,576,240C672,213,768,139,864,106.7C960,75,1056,85,1152,117.3C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      <section id="about">
+        <div class="left">
+          <div class="left-a">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlagJdQBg00CEVPf2NpSQGH7TYA2CovFKX9Q&s"
+              alt="img"
+            />
+          </div>
+          <div class="left-b">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-jv9JgC1f3hHHWIWWI2skKsqxnjDVGj6o-Q&s"
+              alt="img"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <h1>Hallo I'm Mark</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. dolor
+            sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Delectus modi porro tempore asperiores fugiat eaque ex labore, dolor
+            doloremque distinctio vitae quia, totam expedita ab corrupti optio
+            laborum. Dolorum, eos.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. dolor
+            sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Delectus modi porro tempore asperiores fugiat eaque ex labore, dolor
+            doloremque distinctio vitae quia, totam expedita ab corrupti optio
+            laborum. Dolorum, eos.
+          </p>
+        </div>
+      </section>
+      <section id="project">
+        <h1>My Projects</h1>
+        <div class="container">
+          <!-- <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlagJdQBg00CEVPf2NpSQGH7TYA2CovFKX9Q&s"
+              alt="Project 1"
+            />
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+          </div> -->
+        </div>
+      </section>
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2004. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="/script/script.js"></script>
 </html>
