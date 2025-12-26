@@ -1,0 +1,240 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tampilan dari bagian header */
+header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 30px 0 30px;
+  background-color: #ee0404;
+
+  /* top right bottom left */
+  > nav {
+    > ul {
+      list-style: none;
+      display: flex;
+      gap: 5rem;
+      padding: 0;
+      margin: 0;
+      > li {
+        > a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: 600;
+          &:hover {
+            color: gray;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  > div {
+    > a {
+      text-decoration: none;
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+section {
+  min-height: 80vh;
+  padding: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: grid;
+  justify-content: center;
+  gap: 20%;
+
+  > div {
+    display: flex;
+    > .left {
+      flex: 1;
+      text-align: start;
+      justify-content: center;
+      padding: 20px;
+      font-size: xx-large;
+      > a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: medium;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    > .right {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+
+      > img {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+#about {
+  background-color: #ee0404;
+  color: white;
+  gap: 20%;
+
+  > .left,
+  .right {
+    flex: 1;
+    padding: 20px;
+  }
+
+  > .left {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    > .left-a,
+    .left-b {
+      width: 400px;
+      height: 240px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  > .right {
+    text-align: start;
+
+    > h1 {
+      font-size: xx-large;
+      margin-bottom: 20px;
+    }
+
+    > p {
+      font-size: medium;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  }
+}
+
+svg,
+.about-section {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#project {
+    background-color: #fff;
+    color: #273036;
+    display: grid;
+    justify-content: center;
+    gap: 20%;
+    > .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        > img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        > h2 {
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+        > p {
+            font-size: medium;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    }
+}
+
+#contact {
+    background-color: #000;
+    color: white;
+    display: grid;
+    justify-content: center;
+    gap: 20%;
+    > form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        > label {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        > input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        > button {
+            padding: 10px;
+            background-color: #ee0404;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer {
+  background-color: #ee0404;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
